@@ -171,3 +171,56 @@ t_d_cell * BinarySearch(t_d_list *list, int value)
     return NULL ;
 }
 
+void DisplayMenu(){
+    ///display all the possibilities
+    int action;
+    printf("\n -- Menu -- :\n");
+    printf("1- Search for a contact\n");
+    printf("2- View a contact's appointments\n");
+    printf("3- Create a contact\n");
+    printf("4- Create an appointment for a contact\n");
+    printf("5- Delete an appointment\n");
+    printf("6- Save appointments\n");
+    printf("7- Load appointments\n");
+    printf("8- Stop\n");
+    ///while the user doesn't want to stop, it asks him what he wants to do
+    do {
+        printf("\nWhat do you want to do ?: ");
+        scanf("%d", &action);
+        switch (action) {
+            case 1:
+                /// calls the function to search
+                printf("Search for a contact\n");
+                break;
+            case 2:
+                /// calls the function to view appointments
+                printf("View a contact's appointments\n");
+                break;
+            case 3:
+                /// calls the function to create contact
+                printf("Create a contact\n");
+                break;
+            case 4:
+                /// calls the function to create appointment
+                printf("Create an appointment for a contact\n");
+                break;
+            case 5:
+                /// calls the function to delete
+                printf("Delete an appointment\n");
+                break;
+            case 6:
+                /// calls the function to save
+                printf("Save appointments\n");
+                break;
+            case 7:
+                /// calls the function to load
+                printf("Load appointments\n");
+                break;
+            case 8:
+                break;
+            default:
+                printf("Not in the range of choices");
+                break;
+        }
+    } while (action!=8);
+}

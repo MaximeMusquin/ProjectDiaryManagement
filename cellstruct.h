@@ -27,3 +27,5 @@ void DisplayList(t_d_list*);
 
 t_d_cell *LowSearch(t_d_list*, int);
 t_d_cell* BinarySearch(t_d_list*, int);
+
+void DisplayMenu();
